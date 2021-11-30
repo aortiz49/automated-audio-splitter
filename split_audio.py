@@ -27,15 +27,32 @@ SOURCE_PATH = '/Users/renegade/MyRepos/automated-audio-splitter/'
 DESTINATION_PATH = '/Users/renegade/MyRepos/automated-audio-splitter/BDSP/'
 
 
-subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", "01:49:42", "-to", "01:52:40", "-i", f'bdsp.flac',  f'{DESTINATION_PATH}/Mt_Coronet.flac'],cwd=f'{SOURCE_PATH}',check=True)
-print(bcolors.OKCYAN + "Lake theme" + bcolors.ENDC)
+if __name__ == "__main__":
+        
+    subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", "01:49:42", "-to", "01:52:40", "-i", f'bdsp.flac',  f'{DESTINATION_PATH}/Mt_Coronet.flac'],cwd=f'{SOURCE_PATH}',check=True)
+    print(bcolors.OKCYAN + "Lake theme" + bcolors.ENDC)
 
-# 
-subprocess.run(["ffmpeg", "-i", "BDSP/Mt_Coronet.flac", "-i", "rain.flac", "-filter_complex" ,"amix=inputs=2:duration=first:weights='1 2':dropout_transition=0,volume=2", "Mt_Coronet.flac"],cwd=f'{SOURCE_PATH}',check=True)
-print(bcolors.OKCYAN + "Lake theme + RAIN" + bcolors.ENDC)
+    subprocess.run(["ffmpeg","-hide_banner", "-loglevel", "error", "-i", "BDSP/Mt_Coronet.flac", "-i", "rain.flac", "-filter_complex" ,"amix=inputs=2:duration=first:weights='1 1.9':dropout_transition=0,volume=2", "Mt_Coronet.flac"],cwd=f'{SOURCE_PATH}',check=True)
+    print(bcolors.OKCYAN + "Lake theme + RAIN" + bcolors.ENDC)
 
-"""subprocess.run(["ffmpeg","-hide_banner", "-loglevel", "error", "-ss", "02:54:05", "-to", "02:57:38", "-i", "bdsp.flac",  "Old_Chateau.flac"],cwd=f'{SOURCE_PATH}',check=True)
-print(bcolors.OKCYAN + "Old Chateau" + bcolors.ENDC)
-"""
+    subprocess.run(["ffmpeg","-hide_banner", "-loglevel", "error", "-ss", "02:54:05", "-to", "02:57:38", "-i", "bdsp.flac",  f'{DESTINATION_PATH}/Old_Chateau.flac'],cwd=f'{SOURCE_PATH}',check=True)
+    print(bcolors.OKCYAN + "Old Chateau" + bcolors.ENDC)
+
+    subprocess.run(["ffmpeg","-hide_banner", "-loglevel", "error", "-i", "BDSP/Old_Chateau.flac", "-i", "rain.flac", "-filter_complex" ,"amix=inputs=2:duration=first:weights='1 1.9':dropout_transition=0,volume=2", "Old_Chateau.flac"],cwd=f'{SOURCE_PATH}',check=True)
+    print(bcolors.OKCYAN + "Old_Chateau + RAIN" + bcolors.ENDC)
+
+    subprocess.run(["ffmpeg","-hide_banner", "-loglevel", "error", "-ss", "02:18:56", "-to", "02:21:51", "-i", "bdsp.flac",  f'{DESTINATION_PATH}/Pokemon_Center_Night.flac'],cwd=f'{SOURCE_PATH}',check=True)
+    print(bcolors.OKCYAN + "Pokemon Center (Night)" + bcolors.ENDC)
+
+    subprocess.run(["ffmpeg", "-i", "BDSP/Pokemon_Center_Night.flac", "-i", "rain.flac", "-filter_complex" ,"amix=inputs=2:duration=first:weights='1 1.9':dropout_transition=0,volume=2", "Pokemon_Center_Night.flac"],cwd=f'{SOURCE_PATH}',check=True)
+    print(bcolors.OKCYAN + "Pokemon_Center (Night) + RAIN" + bcolors.ENDC)
+
+
+
+
+
+
+
+
 
 
