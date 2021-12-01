@@ -1,0 +1,143 @@
+01.Opening Movie:00:00
+02.Introduction:01:46
+03.Special Report- ''Search For The Red Gyarados!'':04:10
+04.Twinleaf Town (Day):04:50
+05.Rival:07:36
+06.Route 201 (Day):08:48
+07.Lake:10:52
+08.A Surprise At The Lake!:13:18
+09.Battle! (Wild Pokémon):13:55
+10.Victory! (Wild Pokémon):16:16
+11.Dawn:16:51
+12.Obtained An Item!:18:36
+13.Sandgem Town (Day):18:39
+14.The Pokémon Lab:20:41
+15.Hurry Along:23:04
+16.Pokémon Center (Day):23:58
+17.Pokémon Healed:25:31
+18.Trainers' Eyes Meet (Youngster):25:34
+19.Trainers' Eyes Meet (Lass):26:11
+20.Battle! (Trainer Battle):26:42
+21.Victory! (Trainer Battle):29:52
+22.Jubilife City (Day):30:31
+23.Obtained A Key Item!:32:13
+24.Poké Mart:32:16
+25.Route 203 (Day):33:53
+26.Battle! (Rival):36:52
+27.Oreburgh Gate:39:00
+28.Obtained A TM!:41:51
+29.Oreburgh City (Day):41:55
+30.Oreburgh Mine:43:30
+31.Pokémon Gym:46:42
+32.Battle! (Gym Leader):48:40
+33.Victory! (Gym Leader):51:41
+34.Obtained a Badge!:53:15
+35.Trainers' Eyes Meet (Twins):53:21
+36.Level Up!:53:53
+37.Floaroma Town (Day):53:55
+38.Obtained a Berry!:56:29
+39.Route 205 (Day):56:31
+40.Team Galactic Appears!:58:20
+41.Battle! (Team Galactic):59:09
+42.Eterna Forest:01:01:39
+43.Let's Go Together!:01:04:21
+44.Eterna City (Day):01:04:24
+45.Galactic Eterna Building:01:07:48
+46.Battle! (Team Galactic Commander):01:09:04
+47.Victory! (Team Galactic):01:11:22
+48.Evolution:01:11:52
+49.Congratulations! Your Pokémon Evolved!:01:12:35
+50.Bicycle:01:12:40
+51.Trainers' Eyes Meet (Cyclist):01:15:11
+52.Route 206 (Day):01:16:11
+53.Hearthome City (Day):01:17:38
+54.Route 209 (Day):01:19:44
+55.Trainers' Eyes Meet (Hiker):01:22:22
+56.Solaceon Town (Day):01:22:57
+57.Obtained a Pokétch App!:01:24:50
+58.Route 210:01:24:52
+59.Veilstone City (Day):01:27:25
+60.Valor Lakefront (Day):01:30:14
+61.Canalave City:01:32:57
+62.Route 216 (Day):01:35:38
+63.Snowpoint City (Day):01:38:34
+64.Team Galactic HQ:01:42:26
+65.Battle! (Team Galactic Boss):01:44:19
+66.Deep Within Team Galactic HQ:01:48:34
+67.Mt.Coronet:01:49:42
+68.Spear Pillar:01:52:40
+69.The Legendary Pokémon Appears!:01:54:16
+70.Catastrophe!:01:55:05
+71.Battle! (Dialga-Palkia):01:55:51
+72.Sunyshore City (Day):02:00:54
+73.Victory Road:02:03:04
+74.Trainers' Eyes Meet (Ace Trainer):02:04:52
+75.Pokémon League (Day):02:05:44
+76.Fight Area (Day):02:08:30
+77.Route 225 (Day):02:10:40
+78.Route 228 (Day):02:13:21
+79.Twinleaf Town (Night):02:15:04
+80.Route 201 (Night):02:17:47
+81.Pokémon Center (Night):02:18:56
+82.Sandgem Town (Night):02:21:51
+83.Lucas:02:23:50
+84.Jubilife City:02:25:34
+85.TV Station:02:27:15
+86.Gts:02:29:12
+87.Surf:02:30:40
+88.Canalave City (Night):02:33:40
+89.Move Deleted:02:36:34
+90.Route 203 (Night):02:36:36
+91.Trainers' Eyes Meet (Black Belt):02:39:34
+92.Oreburgh City (Night):02:40:06
+93.Route 205 (Night):02:41:44
+94.Trainers' Eyes Meet (Sailor):02:43:33
+95.Eterna City (Night):02:44:46
+96.The Underground:02:48:10
+97.Trainers' Eyes Meet (Aroma Lady):02:50:51
+98.Floaroma Town (Night):02:51:32
+99.Old Chateau:02:54:04
+100.Solaceon Town (Night):02:57:38
+101.Great Marsh:02:59:34
+102.Route 206 (Night):03:01:30
+103.Trainers' Eyes Meet (Collector):03:02:57
+104.Veilstone City (Night):03:03:52
+105.Game Corner:03:06:51
+106.Trainers' Eyes Meet (PI):03:09:18
+107.Route 209 (Night):03:10:11
+108.Snowpoint City (Night):03:12:49
+109.Route 216 (Night):03:16:42
+110.Lake Caverns:03:19:42
+111.Battle! (Azelf-Mesprit-Uxie):03:21:44
+112.Route 210 (Night):03:25:12
+113.A Poké Radar Hit!:03:27:49
+114.Sunyshore City (Night):03:28:35
+115.Trainers' Eyes Meet (Artist):03:31:30
+116.Amity Square:03:32:46
+117.Got an Accessory:03:34:43
+118.Hearthome City (Night):03:34:46
+119.Contest Hall:03:37:04
+120.Poffins:03:38:13
+121.Contest- Title:03:39:20
+122.Contest- Dress:03:39:26
+123.Dance- Easy:03:39:45
+124.Dance- Difficult:03:41:07
+125.Contest 1:03:42:31
+126.Contest 2:03:44:04
+127.Contest 3:03:45:19
+128.Contest 4:03:46:33
+129.Contest 5:03:47:39
+130.Contest- Results Announcement:03:48:49
+131.Contest- Winner:03:49:28
+132.Route 228 (Night):03:50:01
+133.Valor Lakefront (Night):03:51:44
+134.Fight Area (Night):03:54:26
+135.Battle Tower:03:56:37
+136.Route 225 (Night):03:58:31
+137.Stark Mountain:04:01:15
+138.Battle! (Legendary Pokémon):04:03:45
+139.Pokémon League (Night):04:05:34
+140.Decisive Battle! (Pokémon League):04:08:20
+141.The Elite Four Appear!:04:10:58
+142.Battle! (Elite Four):04:11:41
+143.Victory! (Elite Four):04:14:42
