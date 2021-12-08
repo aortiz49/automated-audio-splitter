@@ -4,7 +4,7 @@ import os
 # constants 
 SOURCE_PATH = '/Users/renegade/MyRepos/automated-audio-splitter/in'
 OUT_PATH = '/Users/renegade/MyRepos/automated-audio-splitter/out'
-ORIGIN_TRACK = 'bdsp.flac'  # TODO: set this as path var
+ORIGIN_TRACK = f'{SOURCE_PATH}/bdsp.flac'  # TODO: set this as path var
 
 
 def parseTrackList():
@@ -52,7 +52,7 @@ def parseTrackList():
     tracks[track_id] = (track_name, start_time, tot_duration)
 
     # check that the file exists.If not, create the directory.
-    file = f'{OUTPUT_PATH}/out.txt'
+    file = f'{OUT_PATH}/out.txt'
     os.makedirs(os.path.dirname(file), exist_ok=True)
 
     # if the file exists, overwrite it

@@ -11,7 +11,6 @@ from audio_times_parser import *
 
 """
 
-
 # internal class to print colors to the terminal
 class bcolors:
     HEADER = '\033[95m'
@@ -30,48 +29,27 @@ if __name__ == "__main__":
     # obtains all information from tracks
     tracks = parseTrackList()
 
-    if not os.path.exists(f'{DESTINATION_PATH}'):
-        os.makedirs(f'{DESTINATION_PATH}')
+    if not os.path.exists(f'{OUT_PATH}/BDSP_NO_RAIN'):
+        os.makedirs(f'{OUT_PATH}/BDSP_NO_RAIN')
 
-    if not os.path.exists(f'{OUT}'):
-        os.makedirs(f'{DESTINATION_PATH}')    
+    if not os.path.exists(f'{OUT_PATH}/BDSP_RAIN'):
+        os.makedirs(f'{OUT_PATH}/BDSP_RAIN')  
 
     for key, val in tracks.items():
         name = tracks[f'{key}'][0]
         start = tracks[f'{key}'][1]
         end = tracks[f'{key}'][2]
+        file_name = f'{key}_{name}.flac'
 
         subprocess.run(
             ["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", f'{start}', "-to", f'{end}',
-             "-i", f'{ORIGIN_TRACK}', f'{key}.{DESTINATION_PATH}/{name}.flac'], cwd=f'{SOURCE_PATH}',
-            check=True)
+             "-i", f'{ORIGIN_TRACK}', f'{OUT_PATH}/BDSP_NO_RAIN/{file_name}'], check=True)
 
         subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i",
-                        f'{DESTINATION_PATH}/{name}.flac',
-                        "-i", "rain.flac", "-filter_complex",
+                        f'{OUT_PATH}/BDSP_NO_RAIN/{file_name}',
+                        "-i", f'{SOURCE_PATH}/rain.flac', "-filter_complex",
                         "amix=inputs=2:duration=first:weights='1 1.9':dropout_transition=0,"
-                        "volume=2", f'{name}.flac'], cwd=f'{SOURCE_PATH}', check=True)
+                        "volume=2", f'{file_name}'], cwd=f'{OUT_PATH}/BDSP_RAIN', check=True)
+        
         print(bcolors.OKCYAN + f'{name}' + bcolors.ENDC)
-
-
-
-
-    """        run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", "01:49:42", "-to", "01:52:40", "-i", "bdsp.flac",  f'{DESTINATION_PATH}/Mt_Coronet.flac'],cwd=f'{SOURCE_PATH}',check=True)
-    print(bcolors.OKCYAN + "Lake theme" + bcolors.ENDC)
-
-    run(["ffmpeg","-hide_banner", "-loglevel", "error", "-i", "desriantion_path", "-i", "rain.flac", "-filter_complex" ,"amix=inputs=2:duration=first:weights='1 1.9':dropout_transition=0,volume=2", "Mt_Coronet.flac"],cwd=f'{SOURCE_PATH}',check=True)
-    print(bcolors.OKCYAN + "Lake theme + RAIN" + bcolors.ENDC)
-
-    run(["ffmpeg","-hide_banner", "-loglevel", "error", "-ss", "02:54:05", "-to", "02:57:38", "-i", "bdsp.flac",  f'{DESTINATION_PATH}/Old_Chateau.flac'],cwd=f'{SOURCE_PATH}',check=True)
-    print(bcolors.OKCYAN + "Old Chateau" + bcolors.ENDC)
-
-    run(["ffmpeg","-hide_banner", "-loglevel", "error", "-i", "BDSP/Old_Chateau.flac", "-i", "rain.flac", "-filter_complex" ,"amix=inputs=2:duration=first:weights='1 1.9':dropout_transition=0,volume=2", "Old_Chateau.flac"],cwd=f'{SOURCE_PATH}',check=True)
-    print(bcolors.OKCYAN + "Old_Chateau + RAIN" + bcolors.ENDC)
-
-    run(["ffmpeg","-hide_banner", "-loglevel", "error", "-ss", "02:18:56", "-to", "02:21:51", "-i", "bdsp.flac",  f'{DESTINATION_PATH}/Pokemon_Center_Night.flac'],cwd=f'{SOURCE_PATH}',check=True)
-    print(bcolors.OKCYAN + "Pokemon Center (Night)" + bcolors.ENDC)
-
-    run(["ffmpeg", "-i", "BDSP/Pokemon_Center_Night.flac", "-i", "rain.flac", "-filter_complex" ,"amix=inputs=2:duration=first:weights='1 1.9':dropout_transition=0,volume=2", "Pokemon_Center_Night.flac"],cwd=f'{SOURCE_PATH}',check=True)
-    print(bcolors.OKCYAN + "Pokemon_Center (Night) + RAIN" + bcolors.ENDC)
-"""
 
