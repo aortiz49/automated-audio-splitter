@@ -7,7 +7,9 @@ from audio_times_parser import *
 2. find a long video with timestamps you want the files of
 3. find the rain video 
 4. split each part of the song into its own audio file
-5. mix each one with rain, take the shortest
+5. mix each one with rain, take the shortest do this for all files
+6. select the ones you want to add to your mix
+7. extract length, fade in and fade out
 
 """
 
@@ -50,6 +52,7 @@ if __name__ == "__main__":
                         "-i", f'{SOURCE_PATH}/rain.flac', "-filter_complex",
                         "amix=inputs=2:duration=first:weights='1 1.9':dropout_transition=0,"
                         "volume=2", f'{file_name}'], cwd=f'{OUT_PATH}/BDSP_RAIN', check=True)
-        
+
         print(bcolors.OKCYAN + f'{name}' + bcolors.ENDC)
+
 

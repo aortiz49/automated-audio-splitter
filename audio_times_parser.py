@@ -4,7 +4,9 @@ import os
 # constants 
 SOURCE_PATH = '/Users/renegade/MyRepos/automated-audio-splitter/in'
 OUT_PATH = '/Users/renegade/MyRepos/automated-audio-splitter/out'
-ORIGIN_TRACK = f'{SOURCE_PATH}/bdsp.flac'  # TODO: set this as path var
+ORIGIN_TRACK = f'{SOURCE_PATH}/bdsp.flac'  
+
+# trim some of the original audio to eliminate noise at start of track
 
 
 def parseTrackList():
